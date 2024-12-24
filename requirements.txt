@@ -1,0 +1,12 @@
+langchain==0.2.0
+langchain-openai==0.1.7
+langchain-community==0.2.0
+chroma-hnswlib
+langgraph==0.1.1
+langchain-chroma==0.1.1
+python-dotenv
+PyPDF2
+langchain_core
+streamlit
+plotly
+wordcloud
