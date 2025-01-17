@@ -18,7 +18,7 @@ class QuestionRephraser:
         self.llm = ChatOpenAI(model=model_name, temperature=temperature)
         self.output_parser = StrOutputParser()
 
-        # Default system prompt for rephrasing
+        # system prompt for rephrasing
         self.SYS_PROMPT = """Act as a question re-writer and perform the following task:
                              - Convert the following input question to a better version that is optimized for web search.
                              - When re-writing, look at the input question and try to reason about the underlying semantic intent/meaning.
@@ -45,8 +45,6 @@ class QuestionRephraser:
 
     
 
-
-# Example usage
 if __name__ == "__main__":
     # Initialize the rephraser
     rephraser = QuestionRephraser(model_name="gpt-4o", temperature=0)

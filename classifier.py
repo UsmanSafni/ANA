@@ -4,7 +4,7 @@ class QuestionCategorizer:
         self.categories = ["Exercise", "Diet", "General health", "Sleep","Mental Health","Nutrition","Drugs"]
 
     def classify(self, question: str) -> str:
-        # Example: Rule-based categorization (replace with ML model if needed)
+       #Rule-based categorization (will be replaced with a ML model)
         if "exercise" in question.lower():
             return "Exercise"
         elif "diet" in question.lower() or "food" in question.lower():

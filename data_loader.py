@@ -49,7 +49,7 @@ class DataLoader:
                 self.docs.append(
                     Document(
                         page_content=full_text,
-                        metadata={"file_name": filename}  # Include file name as metadata
+                        metadata={"file_name": filename} 
                     )
                 )
         print(f"[INFO] Loaded {len(self.docs)} PDF(s) from {self.pdf_directory}.")
@@ -113,6 +113,4 @@ if __name__ == "__main__":
 # Initialize DataLoader
     data_loader = DataLoader()
 
-
-# Access the retriever
     retriever = data_loader.get_retriever()

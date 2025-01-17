@@ -24,7 +24,7 @@ class DocGrader:
         self.llm = ChatOpenAI(model=model_name, temperature=temperature)
         self.structured_llm_grader = self.llm.with_structured_output(self.GradeDocuments)
 
-        # Default system prompt for the grader
+        # system prompt for the grader
         self.SYS_PROMPT = """You are an expert grader assessing relevance of a retrieved document to a user question.
         Follow these instructions for grading:
           - If the document contains keyword(s) or semantic meaning related to the question, grade it as relevant.

@@ -13,7 +13,7 @@ class QARAGChain:
             model_name (str): The name of the language model to use.
             temperature (float): The sampling temperature for response generation.
         """
-        # Create a prompt template
+
         self.prompt_template = ChatPromptTemplate.from_template(
             """You are a highly knowledgeable healthcare assistant specializing in Exercise, Diet, General Health, Sleep, Mental Health, Nutrition, and Drugs.
        Your sole purpose is to answer questions strictly related to these topics. 
@@ -35,8 +35,7 @@ class QARAGChain:
        Answer:
     """
         )
-        
-        # Initialize the language model
+
         self.chatgpt = ChatOpenAI(model_name=model_name, temperature=temperature)
         
         # Define the RAG chain
@@ -77,7 +76,6 @@ class QARAGChain:
         input_data = {"question": question, "context": context}
         return self.qa_rag_chain.invoke(input_data)
 
-# Example usage
 if __name__ == "__main__":
     # Initialize the QA RAG Chain
     qa_chain = QARAGChain(model_name="gpt-4o", temperature=0)
