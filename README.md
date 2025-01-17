@@ -2,7 +2,7 @@
 # ANA: Agentic Corrective RAG (CRAG) System with LangGraph
 
 ## Overview
-This project is a hands-on demonstration of how to build an **Agentic Corrective Retrieval Augmented Generation (CRAG)** System using **LangGraph**. The idea is inspired by the *Corrective Retrieval Augmented Generation* research paper.
+This project is a hands-on demonstration of how to build an **Agentic Corrective Retrieval Augmented Generation (CRAG)** System using **LangGraph** for healthcare domain. The idea is inspired by the *Corrective Retrieval Augmented Generation* research paper.
 
 ## Problem Statement
 Traditional Retrieval Augmented Generation (RAG) systems face critical challenges:  
